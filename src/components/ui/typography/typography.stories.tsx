@@ -27,18 +27,18 @@ export const AllTypography = {
   ),
 }
 
-// export const H1WithSpanComponent = {
-//   render: () => <Typography.H1 component={'a'}>Span tag</Typography.H1>,
-// }
+export const H1WithSpanComponent = {
+  render: () => <Typography.H1 component={'a'}>Span tag</Typography.H1>,
+}
 
 // export const Icon = {
 //   render: () => <TheGift />,
 // }
 
-// export const H1WithMargin = {
-//   render: () => (
-//     <Typography.H1 ml={10} mt={20}>
-//       Heading 1
-//     </Typography.H1>
-//   ),
-// }
+export const H1WithMargin = {
+  render: () => (
+    <Typography.H1 ml={10} mt={20}>
+      Heading 1
+    </Typography.H1>
+  ),
+}
