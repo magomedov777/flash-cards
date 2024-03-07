@@ -1,44 +1,92 @@
-import { Meta } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
-import { Typography } from './typography'
+import { Typography } from '@/components/ui/typography/typography'
 
-export default {
-  component: Typography.H1,
-  title: 'Components/Typography',
-} as Meta<typeof Typography.H1>
+const meta = {
+  component: Typography,
+} satisfies Meta<typeof Typography>
 
-export const AllTypography = {
-  render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <Typography.H1>Heading 1</Typography.H1>
-      <Typography.H2>Heading 2</Typography.H2>
-      <Typography.H3>Heading 3</Typography.H3>
-      <Typography.Subtitle1>Subtitle 1</Typography.Subtitle1>
-      <Typography.Subtitle2>Subtitle 2</Typography.Subtitle2>
-      <Typography.Body1>Body 1</Typography.Body1>
-      <Typography.Body2>Body 2</Typography.Body2>
-      <Typography.Overline>Overline</Typography.Overline>
-      <Typography.Caption>Caption</Typography.Caption>
-      <Typography.CaptionLink>Caption Link</Typography.CaptionLink>
-      <Typography.SubtitleLink>Subtitle Link</Typography.SubtitleLink>
-      <Typography.Link>Link</Typography.Link>
-      <Typography.Error component={'div'}>Error</Typography.Error>
-    </div>
-  ),
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Typography_H1: Story = {
+  args: {
+    children: 'Header1',
+    disabled: false,
+    variant: 'h1',
+  },
 }
 
-export const H1WithSpanComponent = {
-  render: () => <Typography.H1 component={'a'}>Span tag</Typography.H1>,
+export const Typography_H2: Story = {
+  args: {
+    children: 'Header2',
+    disabled: false,
+    variant: 'h2',
+  },
+}
+export const Typography_H3: Story = {
+  args: {
+    children: 'Header3',
+    disabled: false,
+    variant: 'h3',
+  },
+}
+export const Typography_H4: Story = {
+  args: {
+    children: 'Header4',
+    disabled: false,
+    variant: 'h4',
+  },
 }
 
-// export const Icon = {
-//   render: () => <TheGift />,
-// }
+export const Typography_Body1: Story = {
+  args: {
+    children: 'Body1',
+    disabled: false,
+    variant: 'body1',
+  },
+}
+export const Typography_Body2: Story = {
+  args: {
+    children: 'Body2',
+    disabled: false,
+    variant: 'body2',
+  },
+}
 
-export const H1WithMargin = {
-  render: () => (
-    <Typography.H1 ml={10} mt={20}>
-      Heading 1
-    </Typography.H1>
-  ),
+export const Typography_Link1: Story = {
+  args: {
+    children: 'Link1',
+    disabled: false,
+    variant: 'link1',
+  },
+}
+export const Typography_Link2: Story = {
+  args: {
+    children: 'Link2',
+    disabled: false,
+    variant: 'link2',
+  },
+}
+export const Typography_Subtitle1: Story = {
+  args: {
+    children: 'Subtitle1',
+    disabled: false,
+    variant: 'subtitle1',
+  },
+}
+export const Typography_Subtitle2: Story = {
+  args: {
+    children: 'Subtitle2',
+    disabled: false,
+    variant: 'subtitle2',
+  },
+}
+export const Typography_Overline: Story = {
+  args: {
+    children: 'Overline',
+    disabled: false,
+    variant: 'overline',
+  },
 }
