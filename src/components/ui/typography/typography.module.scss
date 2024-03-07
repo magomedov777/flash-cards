@@ -27,42 +27,58 @@
   line-height: var(--line-height-m);
 }
 
-.body_1 {
+.body1 {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-m);
 }
 
-.body_2 {
+.body2 {
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-m);
 }
-.subtitle_1 {
+
+.subtitle1 {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-m);
 }
-.subtitle_2 {
+
+.subtitle2 {
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-m);
 }
+
 .caption {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-s);
 }
+
 .overline {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-s);
 }
-.link_1 {
+
+.link1 {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-s);
   line-height: var(--line-height-m);
+  color: var(--color-info-500);
+  text-decoration: underline;
+  cursor: pointer;
 }
-.link_2 {
+
+.link2 {
   font-weight: var(--font-weight-regular);
+  color: var(--color-info-500);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error {
+  color: var(--color-danger-500);
 }
