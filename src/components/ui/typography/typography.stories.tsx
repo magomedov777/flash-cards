@@ -90,3 +90,18 @@ export const Typography_Overline: Story = {
     variant: 'overline',
   },
 }
+
+export const Typography_Error: Story = {
+  args: {
+    children: 'Error',
+    disabled: false,
+    variant: 'caption',
+  },
+}
+export const Typography_Label: Story = {
+  args: {
+    children: 'Label',
+    disabled: false,
+    variant: 'label',
+  },
+}
